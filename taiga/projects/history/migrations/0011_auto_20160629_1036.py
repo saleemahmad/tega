@@ -119,8 +119,10 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('history', '0010_historyentry_project'),
+        ('wiki', '0003_auto_20160615_0721'),
+        ('users', '0022_auto_20160629_1443')
     ]
 
     operations = [
-        migrations.RunSQL(FIX_PROJECT_ID_SQL),
+        # migrations.RunSQL(FIX_PROJECT_ID_SQL),
     ]
